@@ -46,7 +46,7 @@ public class Application {
 				deploymentService.deploy(unit);
 				KieSession ksession = readKnowledgeBase();
 				EmailWorkItemHandler emailHandler = new EmailWorkItemHandler();
-				emailHandler.setConnection("smtp.gmail.com", "587", "nayak.swadhin@gmail.com", "lesner@12");
+				emailHandler.setConnection("smtp.gmail.com", "587", "nayak.swadhin@gmail.com", "mypassword");
 				emailHandler.getConnection().setStartTls(true);
 				ksession.getWorkItemManager().registerWorkItemHandler("Email", emailHandler);
 				ksession.startProcess("com.sample.bpmn.hello");

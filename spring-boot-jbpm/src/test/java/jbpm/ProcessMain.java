@@ -21,7 +21,7 @@ public class ProcessMain {
 
 
 		EmailWorkItemHandler emailHandler = new EmailWorkItemHandler();
-		emailHandler.setConnection("smtp.gmail.com", "587", "nayak.swadhin@gmail.com", "lesner@12");
+		emailHandler.setConnection("smtp.gmail.com", "587", "nayak.swadhin@gmail.com", "mypassword");
 		ksession.getWorkItemManager().registerWorkItemHandler("Email", (WorkItemHandler) emailHandler);
 
 		// start a new process instance
